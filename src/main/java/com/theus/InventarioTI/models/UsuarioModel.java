@@ -1,4 +1,4 @@
-package com.models;
+package com.theus.InventarioTI.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

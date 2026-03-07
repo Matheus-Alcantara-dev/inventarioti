@@ -1,16 +1,16 @@
-package com.services;
+package com.theus.InventarioTI.services;
 
 import java.time.LocalDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.models.EquipamentoModel;
-import com.models.RegistroModel;
-import com.models.UsuarioModel;
-import com.repositories.EquipamentoRepository;
-import com.repositories.RegistroRepository;
-import com.repositories.UsuarioRepository;
+import com.theus.InventarioTI.models.EquipamentoModel;
+import com.theus.InventarioTI.models.RegistroModel;
+import com.theus.InventarioTI.models.UsuarioModel;
+import com.theus.InventarioTI.repositories.EquipamentoRepository;
+import com.theus.InventarioTI.repositories.RegistroRepository;
+import com.theus.InventarioTI.repositories.UsuarioRepository;
 
 @Service
 public class RegistroService {
@@ -24,7 +24,7 @@ public class RegistroService {
     @Autowired
     private RegistroRepository registroRepository;
 
-    public RegistroModel novoRegistro(Long idUsuario, String numeroDeSerie, LocalDateTime dataHora, String tipoRegistro) {
+    public RegistroModel novoRegistro(Long idUsuario, String numeroDeSerie, LocalDateTime dataHora,  String tipoRegistro) {
 
         // Lógica para registrar a entrada ou saída de um equipamento
         RegistroModel registro = new RegistroModel();

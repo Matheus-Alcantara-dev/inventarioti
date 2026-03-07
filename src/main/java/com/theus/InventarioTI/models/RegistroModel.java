@@ -1,4 +1,4 @@
-package com.models;
+package com.theus.InventarioTI.models;
 
 import java.time.LocalDateTime;
 import jakarta.persistence.*;
